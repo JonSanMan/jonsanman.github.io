@@ -1,9 +1,28 @@
-function stick(e) {
-  e.style.fontSize = "1.618em";
-  e.classList.add("sticky");
+"use strict";
+
+let banner;
+
+document.addEventListener("DOMContentLoaded", main);
+window.addEventListener("scroll", checkypos);
+
+function stickbanner() {
+  banner.style.fontSize = "1.618em";
+  banner.classList.add("sticky");
 }
 
-function unstick(e) {
-  e.style.fontSize = "6.472em";
-  e.classList.remove("sticky");
+function unstickbanner() {
+  banner.style.fontSize = "6.472em";
+  banner.classList.remove("sticky");
+}
+
+function checkypos() {
+  if (window.pageYOffset > banner.offsetTop) {
+    stickbanner();
+  } else {
+    unstickbanner();
+  }
+}
+
+function main() {
+  banner = document.getElementById("banner");
 }
