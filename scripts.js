@@ -2,27 +2,17 @@
 
 let banner;
 
-document.addEventListener("DOMContentLoaded", main);
+document.addEventListener("DOMContentLoaded", setdomvars);
 window.addEventListener("scroll", checkypos);
 
-function stickbanner() {
-  banner.style.fontSize = "1.618em";
-  banner.classList.add("sticky");
-}
-
-function unstickbanner() {
-  banner.style.fontSize = "6.472em";
-  banner.classList.remove("sticky");
-}
-
 function checkypos() {
-  if (window.pageYOffset > banner.offsetTop) {
-    stickbanner();
+  if (window.pageYOffset > (visualViewport.height * 0.35)) {
+    banner.classList.add("sticky");
   } else {
-    unstickbanner();
+    banner.classList.remove("sticky");
   }
 }
 
-function main() {
+function setdomvars() {
   banner = document.getElementById("banner");
 }
