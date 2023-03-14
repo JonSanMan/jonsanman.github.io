@@ -1,33 +1,33 @@
 body {
-  font-family: 'Roboto', sans-serif;
-  background-color: silver;
+	font-family: 'Roboto', sans-serif;
+	background-color: silver;
 }
 
 #banner {
-  font-weight: 400;
-  text-align: center;
-  background-color: rgba(220, 220, 220, 0.7);
-  transition: linear 0.2s;
-  transition-property: font-size;
-  font-size: 6.472em;
-  width: 100%;
-  left: 0px;
-  position: absolute;
-  top: 35%;
+	font-weight: 400;
+	text-align: center;
+	background-color: rgba(220, 220, 220, 0.7);
+	transition: linear 0.2s;
+	transition-property: font-size;
+	font-size: 6.472em;
+	width: 100%;
+	left: 0px;
+	position: absolute;
+	top: 35%;
 }
 
 .sticky {
-  position: fixed !important;
-  font-size: 1.618em !important;
-  top: 0px !important;
-  padding-top: 10px;
-  padding-bottom: 10px;
+	position: fixed !important;
+	font-size: 1.618em !important;
+	top: 0px !important;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 h1 {
-  font-weight: 100;
+	font-weight: 100;
 }
 
 p {
-  font-weight: 300;
+	font-weight: 300;
 }
