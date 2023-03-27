@@ -1,3 +1,7 @@
+:root {
+	--phi: 1.618em;
+}
+
 body {
 	font-family: 'Roboto', sans-serif;
 	background-color: silver;
@@ -9,16 +13,21 @@ body {
 	background-color: rgba(220, 220, 220, 0.7);
 	transition: linear 0.2s;
 	transition-property: font-size;
-	font-size: 6.472em;
+	font-size: calc(var(--phi) * 4);
 	width: 100%;
 	left: 0px;
 	position: absolute;
 	top: 35%;
 }
 
+#sub-banner {
+	font-size: 0.5em;
+	font-weight: 100;
+}
+
 .sticky {
 	position: fixed !important;
-	font-size: 1.618em !important;
+	font-size: var(--phi) !important;
 	top: 0px !important;
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -26,8 +35,10 @@ body {
 
 h1 {
 	font-weight: 100;
+	font-size: calc(var(--phi) * 2);
 }
 
 p {
 	font-weight: 300;
+	font-size: var(--phi);
 }
