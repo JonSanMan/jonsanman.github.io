@@ -25,6 +25,12 @@ body {
 	top: 35%;
 }
 
+@media screen and (max-height: 600px) {
+	#banner {
+		top: 20%;
+	}
+}
+
 #sub-banner {
 	font-size: 0.5em;
 	font-weight: 100;
